@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="./hamburger.css">
+  <link rel="stylesheet" href="./animate.css">
+  <link rel="stylesheet" href="style.css">
+  <title>OUTDOORS</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="./images/logo-white.png" alt="Our company Logo">
+    </div>
+
+    <button class="hamburger hamburger--elastic" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+
+    <h1 class="animate__animate__bounceInDown">Outdoors</h1>
+    <h2 class="animate__animate__bounceInUp">is where life happen</h2>
+
+    <a href="/" class="discover-button animate__tada">Discover Our Tours</a>
+  </header>
+
+  <section>
+    <h3>
+      Most Popular Tours
+    </h3>
+    <div class="container">
+      <div class="fixed-div-container">
+        <div class="card-container wow animate__bounceInLeft" data-wow-duration="1s">
+          <header class="card-1"></header>
+          <h4 class="card-1">The Sea <br> Explorer</h4>
+
+          <div class="body">
+            <ul>
+              <li>3 days tours</li>
+              <li>Up to 30 people</li>
+              <li>2 hours guide</li>
+              <li>Sleep in cozy hotels</li>
+              <li>Difficulty: easy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="fixed-div-container">
+        <div class="card-container">
+          <header class="card-2"></header>
+          <h4 class="card-2">The Forest <br> Hiker</h4>
+          <div class="body">
+            <ul>
+              <li>7 days tours</li>
+              <li>Up to 40 people</li>
+              <li>6 hours guide</li>
+              <li>Sleep in cozy hotels</li>
+              <li>Difficulty: medium</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="fixed-div-container">
+        <div class="card-container wow animate__bounceInRight" data-wow-duration="1s">
+          <header class="card-3"></header>
+          <h4 class="card-3">The Snow <br> Adventurer</h4>
+          <div class="body">
+            <ul>
+              <li>5 days tours</li>
+              <li>Up to 15 people</li>
+              <li>3 hours guide</li>
+              <li>Sleep in cozy hotels</li>
+              <li>Difficulty: hard</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <script>
+    let btn = document.querySelector(".hamburger");
+    btn.addEventListener("click", function () {
+      this.classList.toggle("is-active");
+    });
+  </script>
+  <script src="./wow.js"></script>
+  <script>
+  new WOW().init();
+  </script>
+</body>
+
+</html>
